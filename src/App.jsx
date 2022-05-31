@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import HomeBlog from "./Components/HomeBlog";
 import Team from "./Components/Team";
 import Welcome from "./Components/Welcome";
 
@@ -14,10 +15,7 @@ const App = () => {
 			
 			<Team />
 			
-			<section className="w-full h-96 flex flex-col justify-center items-center gradient-bg-transactions">
-				<h1>Section 0</h1>
-				<p>Lorem ipsum</p>
-			</section>
+			<HomeBlog />
 			
 			<Footer />
 		</div>
