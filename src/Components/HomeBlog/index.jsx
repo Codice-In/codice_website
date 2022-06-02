@@ -59,7 +59,7 @@ const HomeBlog = () => {
 				<MyButton name="See our technologies" />
 
 				<p className="mt-5">
-					or check out Parity's <a href="/" className="text-[#B062FF] no-underline hover:underline">
+					or check out Codice's <a href="/" className="text-[#B062FF] no-underline hover:underline">
 						custom solutions
 					</a>
 				</p>
