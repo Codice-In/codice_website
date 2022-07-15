@@ -5,7 +5,7 @@ import { FiMenu } from 'react-icons/fi';
 
 const NavbarItem = ({ title, classProp }) => {
     return (
-        <li className={`mx-4 cursor-pointer ${classProp}`}>
+        <li className={`mx-4 cursor-pointer hover:underline ${classProp}`}>
             <a href="/">{title}</a>
         </li>
     )
@@ -35,7 +35,7 @@ const Header = () => {
             >
                 {
                     [
-                        'Technologies', 'Solutions', 'About', 'Jobs', 'Blog',
+                        'About', 'Technologies', 'We value', 'Team', 'Blog',
                         <BsTwitter />, <BsGithub />
                     ].map((item, index) => (
                         <NavbarItem title={item} key={item + index} />
@@ -100,46 +100,5 @@ const Header = () => {
         </header>
     )
 }
-
-/*const Header = () => {
-    const iconSize = 22;
-
-    return (
-        <header className="w-full h-[70px] absolute top-0 left-0 right-0">
-            <div className="w-full h-full flex flex-row justify-between items-center md:px-44 px-10">
-                <h1 className="logo sm:text-5xl text-3xl">
-                    <strong className="text-[#B026FF]">C</strong>
-                    odice
-                </h1>
-
-                <ul className="xl:w-1/2 w-2/3 lg:flex hidden flex-row justify-between items-center">
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/">Technologies</a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/">Solutions</a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/">About</a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/">Jobs</a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/">Blog</a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/"><BsTwitter /></a>
-                    </li>
-                    <li className='text-xl text-[#BBB] hover:text-[#FFF] duration-200 ease-in'>
-                        <a href="/"><BsGithub /></a>
-                    </li>
-                </ul>
-
-                <FiMenu className='lg:hidden flex' size={iconSize} />
-            </div>
-        </header>
-    );
-}*/
 
 export default Header;
