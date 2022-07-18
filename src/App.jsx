@@ -18,7 +18,7 @@ const App = () => {
 				<Welcome />
 			</section>
 
-			<section className="w-screen">
+			<section className="w-screen" id='about-us'>
 				<div className='w-full min-h-screen flex lg:justify-start lg:px-32 justify-center py-28 gradient-bg-services'>
 					<MainInfo
 						title="About Codice"
@@ -34,7 +34,7 @@ const App = () => {
 				</div>
 			</section>
 
-			<section className="w-screen min-h-screen gradient-bg-footer">
+			<section className="w-screen min-h-screen gradient-bg-footer" id='we-value'>
 				<div className="flex md:flex-row flex-col gap-y-5">
 					<div className="md:w-1/2 w-full md:h-screen h-auto flex items-center justify-center">
 						<h1 className="text-5xl text-center">At codice we value</h1>

@@ -16,7 +16,7 @@ const TeamCard = ({ imageUrl, name, jobTitle }) => {
 const Team = () => {
     const [displayTeam, setDisplayTeam] = useState(false);
     return (
-        <div className="w-full min-h-screen flex flex-col justify-center items-center gradient-bg-services">
+        <div className="w-full min-h-screen flex flex-col justify-center items-center gradient-bg-services" id="team">
             <div className="py-20 px-2 flex flex-col justify-center items-center">
                 <h1 className="mb-6 md:text-4xl text-2xl font-normal lg:w-2/3 text-center">
                     Technology developed by a team of the world's top blockchain engineers

@@ -3,10 +3,10 @@ import { AiOutlineClose } from 'react-icons/ai';
 import {BsTwitter, BsGithub} from 'react-icons/bs';
 import { FiMenu } from 'react-icons/fi';
 
-const NavbarItem = ({ title, classProp }) => {
+const NavbarItem = ({ title, classProp, link }) => {
     return (
         <li className={`mx-4 cursor-pointer hover:underline ${classProp}`}>
-            <a href="/">{title}</a>
+            <a href={`${link}`}>{title}</a>
         </li>
     )
 }
@@ -35,21 +35,26 @@ const Header = () => {
             >
                 {
                     [
-                        'About', 'Technologies', 'We value', 'Team', 'Blog',
-                        <BsTwitter />, <BsGithub />
+                        {
+                            title: 'About Us',
+                            link: '/#about-us',
+                        },
+                        {
+                            title: 'We value',
+                            link: '/#we-value',
+                        },
+                        {
+                            title: 'Team',
+                            link: '/#team',
+                        },
+                        {
+                            title: 'Blog',
+                            link: '/#blog',
+                        }
                     ].map((item, index) => (
-                        <NavbarItem title={item} key={item + index} />
+                        <NavbarItem title={item.title} key={item + index} link={item.link} />
                     ))
                 }
-
-                <li
-                    className="
-                        bg-[#B062FF] py-2 px-7 mx-4 rounded-full cursor-pointer
-                        hover:bg-[#9040DD]
-                    "
-                >
-                    Get Started
-                </li>
             </ul>
             <div className="flex relative">
                 {toggleMenu
@@ -84,14 +89,24 @@ const Header = () => {
                         
                         {
                             [
-                                'Technologies', 'Solutions', 'About', 'Jobs', 'Blog',
-                                <BsTwitter />, <BsGithub />
+                                {
+                                    title: 'About Us',
+                                    link: '/#about-us',
+                                },
+                                {
+                                    title: 'We value',
+                                    link: '/#we-value',
+                                },
+                                {
+                                    title: 'Team',
+                                    link: '/#team',
+                                },
+                                {
+                                    title: 'Blog',
+                                    link: '/#blog',
+                                }
                             ].map((item, index) => (
-                                <NavbarItem
-                                    title={item}
-                                    key={item + index}
-                                    classProp="my-2 text-lg"
-                                />
+                                <NavbarItem title={item.title} key={item + index} link={item.link} classProp="my-2 text-lg" />
                             ))
                         }
                     </ul>

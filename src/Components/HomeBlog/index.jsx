@@ -25,7 +25,7 @@ const HomeBlogCard = ({ imglink, bloglink, date, description }) => {
 
 const HomeBlog = () => {
     return (
-        <div className="w-full min-h-[80vh] lg:px-28 gradient-bg-transactions">
+        <div className="w-full min-h-[80vh] lg:px-28 gradient-bg-transactions" id="blog">
             <div className="w-full h-full px-10 pb-16">
                 <h4 className="md:text-2xl font-medium pt-20 mt-0 mx-4 md:mb-0">From the blog</h4>
 
